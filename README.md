@@ -280,4 +280,8 @@ club-empreinte-digitale/
 [truncated]
 [truncated]
 [truncated]
-
+© Yakoubi Yamina – Tous droits réservés | All rights reserved | جميع الحقوق محفوظة | 版权所有  
+Ce projet, son contenu, son code, ses idées et ses visuels sont la propriété exclusive de Yakoubi Yamina.  
+Toute reproduction, diffusion, utilisation, adaptation ou exploitation non autorisée, partielle ou totale,  
+est strictement interdite et poursuivie conformément au Code de la propriété intellectuelle.  
+Version non publique – Dépôt en cours.
