@@ -277,9 +277,7 @@ club-empreinte-digitale/
 - **Q1 2025** : Al-Aman CED Takaful launch
 - **Q2 2025** : API Banking Halal v2.0
 - **Q3 2025** : Mobile a...
-[truncated]
-[truncated]
-[truncated]
+  ......a terminer....
 © Yakoubi Yamina – Tous droits réservés | All rights reserved | جميع الحقوق محفوظة | 版权所有  
 Ce projet, son contenu, son code, ses idées et ses visuels sont la propriété exclusive de Yakoubi Yamina.  
 Toute reproduction, diffusion, utilisation, adaptation ou exploitation non autorisée, partielle ou totale,  
