@@ -5,8 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "✅ Hello World depuis Yakoubi-Yamina-Portfolio-Global !"
+      - run: echo "✅ Workflow Hello World exécuté avec succès"
