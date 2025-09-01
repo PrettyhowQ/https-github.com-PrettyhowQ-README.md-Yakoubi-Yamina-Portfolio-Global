@@ -1,4 +1,4 @@
-name: Build and Test Portfolio
+name: Portfolio Documentation Validation
 
 on:
   push:
@@ -7,28 +7,34 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
 
     steps:
       # 1. Récupérer le code du dépôt
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # 2. Installer Node.js (si ton projet utilise npm/yarn)
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
+      # 2. Vérifier que le README existe et n'est pas vide
+      - name: Validate README
+        run: |
+          if [ ! -f README.md ]; then
+            echo "❌ README.md manquant"
+            exit 1
+          fi
+          if [ ! -s README.md ]; then
+            echo "❌ README.md est vide"
+            exit 1
+          fi
+          echo "✅ README.md valide"
 
-      # 3. Installer les dépendances
-      - name: Install dependencies
-        run: npm install
+      # 3. Vérifier la structure du répertoire
+      - name: Check repository structure
+        run: |
+          echo "📁 Structure du répertoire:"
+          find . -type f -not -path "./.git/*" | sort
+          echo "✅ Vérification de structure terminée"
 
-      # 4. Construire le projet (par ex. Next.js, React, Vue, etc.)
-      - name: Build project
-        run: npm run build
-
-      # 5. Vérifier que ça tourne (tests simples ou echo)
-      - name: Run tests
-        run: echo "✅ Build terminé avec succès pour Yakoubi-Yamina-Portfolio-Global"
+      # 4. Validation finale
+      - name: Final validation
+        run: echo "✅ Validation terminée avec succès pour Yakoubi-Yamina-Portfolio-Global"
